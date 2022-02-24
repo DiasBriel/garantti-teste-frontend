@@ -2,10 +2,10 @@
 
 @layer base {
   body {
-    @apply font-sans;
+    @apply font-sans bg-primary text-black;
   }
   button {
-    @apply font-serif;
+    @apply font-serif font-semibold text-sm;
   }
 }
 
@@ -18,5 +18,5 @@
 }
 @font-face {
   font-family: "Poppins";
-  src: url("assets/fonts/Poppins-Regular.ttf");
+  src: url(assets/fonts/Poppins-Regular.ttf);
 }
