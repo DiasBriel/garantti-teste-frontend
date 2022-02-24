@@ -1,26 +1,25 @@
-import React from "react";
-
 type Props = {
-  type: string;
+  buttonStyle: string;
   className?: string;
   label: string;
 };
 
-const Button = ({ type, className, label }: Props) => {
-  let style: string = "";
+const Button = ({ buttonStyle, className, label }: Props) => {
+  let customStyle: string = "";
 
-  if (type === "primary") {
-    style = "bg-gradient-to-l from-orange to-yellow hover:bg-gradient-to-r";
+  if (buttonStyle === "primary") {
+    customStyle =
+      "bg-gradient-to-l from-orange to-yellow hover:bg-gradient-to-r shadow-xl";
   }
 
-  if (type === "secondary") {
-    style =
+  if (buttonStyle === "secondary") {
+    customStyle =
       "bg-transparent border border-white text-white active:bg-white active:text-black lg:hover:bg-white lg:hover:text-black";
   }
 
   return (
     <button
-      className={`${className} ${style} py-3 px-4 rounded-full transition duration-200 lg:hover:scale-105 active:scale-95 whitespace-nowrap`}
+      className={`${className} ${customStyle} py-3 px-4 rounded-full transition duration-200 whitespace-nowrap`}
     >
       {label}
     </button>

@@ -1,9 +1,17 @@
+import Container from "../components/Container";
 import Banner from "../components/LandingPageComponents/Banner";
+
+import JoinUs from "../components/LandingPageComponents/JoinUs";
 
 const LandingPage = () => {
   return (
-    <div className="px-4 xl:px-0">
-      <Banner />
+    <div>
+      <Container>
+        <Banner />
+      </Container>
+      <div className="h-[70vh] bg-lightGrey">
+        <JoinUs />
+      </div>
     </div>
   );
 };
