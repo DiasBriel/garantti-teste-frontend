@@ -1,11 +1,14 @@
 import Container from "../Container";
 import Form from "./Form";
+import SectionTitle from "./SectionTitle";
 
 const JoinUs = () => {
   return (
-    <Container className="flex flex-col items-center py-10">
-      <h3>Junte-se a nós</h3>
-      <p>Venha fazer parte dessa equipe com Garanttia de qualidade!</p>
+    <Container column>
+      <SectionTitle
+        title="Junte-se a nós"
+        subtitle="Venha fazer parte dessa equipe com Garanttia de qualidade!"
+      />
       <Form />
     </Container>
   );
