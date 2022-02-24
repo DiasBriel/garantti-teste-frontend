@@ -7,6 +7,12 @@
   button {
     @apply font-serif font-semibold text-sm;
   }
+  h1 {
+    @apply text-[28px] sm:text-5xl lg:text-6xl text-center md:text-left font-bold text-white whitespace-nowrap;
+  }
+  h4 {
+    @apply text-sm sm:text-xl text-center md:text-left font-medium text-white;
+  }
 }
 
 @tailwind components;
