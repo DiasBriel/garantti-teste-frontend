@@ -1,5 +1,6 @@
 import Container from "../components/Container";
 import Banner from "../components/LandingPageComponents/Banner";
+import Divider from "../components/LandingPageComponents/Divider";
 
 import JoinUs from "../components/LandingPageComponents/JoinUs";
 
@@ -9,8 +10,9 @@ const LandingPage = () => {
       <Container>
         <Banner />
       </Container>
-      <div className="h-[70vh] bg-lightGrey">
+      <div className="bg-lightGrey py-4 lg:py-10">
         <JoinUs />
+        <Divider />
       </div>
     </div>
   );
