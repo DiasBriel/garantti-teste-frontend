@@ -1,3 +1,22 @@
 @tailwind base;
+
+@layer base {
+  body {
+    @apply font-sans;
+  }
+  button {
+    @apply font-serif;
+  }
+}
+
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(assets/fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("assets/fonts/Poppins-Regular.ttf");
+}

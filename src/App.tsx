@@ -1,5 +1,11 @@
+import LandingPage from "./pages/LandingPage";
+
 function App() {
-  return <div className="text-5xl font-bold">Ola</div>;
+  return (
+    <div className="">
+      <LandingPage />
+    </div>
+  );
 }
 
 export default App;
