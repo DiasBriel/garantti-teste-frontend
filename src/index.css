@@ -10,8 +10,14 @@
   h1 {
     @apply text-[28px] sm:text-5xl lg:text-6xl text-center md:text-left font-bold text-white whitespace-nowrap;
   }
+  h3 {
+    @apply text-xl sm:text-3xl font-semibold text-black whitespace-nowrap;
+  }
   h4 {
     @apply text-sm sm:text-xl text-center md:text-left font-medium text-white;
+  }
+  p {
+    @apply text-sm text-center sm:text-base;
   }
 }
 

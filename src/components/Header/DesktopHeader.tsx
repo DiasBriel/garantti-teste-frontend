@@ -15,7 +15,7 @@ const DesktopHeader = ({ className }: Props) => {
         <span className="underline text-white text-sm">
           USUÁRIOS EXISTENTES
         </span>
-        <Button type="secondary" label="NOVO USUÁRIO" />
+        <Button buttonStyle="secondary" label="NOVO USUÁRIO" />
       </div>
     </div>
   );
