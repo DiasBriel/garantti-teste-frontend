@@ -1,9 +1,6 @@
-type Props = {
-  className?: string;
-  stroke?: string;
-};
+import { SvgProps } from "../../interfaces";
 
-const SearchIcon = ({ className, stroke }: Props) => {
+const SearchIcon = ({ className, stroke }: SvgProps) => {
   return (
     <svg
       className={`${className || ""} h-6 w-6`}

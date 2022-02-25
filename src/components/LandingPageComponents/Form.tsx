@@ -2,9 +2,11 @@ import { useState } from "react";
 import Input from "../../components/Input";
 import Button from "../Button";
 import validator from "validator";
+import { User } from "../../interfaces";
+import api from "../../services/api";
 
 const Form = () => {
-  const [userData, setUserData] = useState({
+  const [userData, setUserData] = useState<User>({
     name: "",
     email: "",
     role: "",
@@ -32,8 +34,22 @@ const Form = () => {
     );
   };
 
+  const createUser = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    api
+      .post("/user", userData)
+      .then((res) => {
+        alert("Usuário criado com sucesso!");
+        window.location.reload();
+      })
+      .catch((err) => {
+        alert("Preencha corretamente todos os campos!");
+      });
+  };
+
   return (
-    <form onSubmit={() => {}} className="flex flex-col items-center">
+    <form onSubmit={createUser} className="flex flex-col items-center">
       <div className="flex flex-col sm:flex-row space-y-5 sm:space-y-0 sm:space-x-5 mt-8 mb-10">
         <Input
           name="name"
@@ -65,7 +81,12 @@ const Form = () => {
           placeholder="Cargo"
         />
       </div>
-      <Button buttonStyle="primary" label="JUNTE-SE A NÓS!" />
+      <Button
+        type="submit"
+        buttonStyle="primary"
+        disabled={errorMessage.length !== 0}
+        label="JUNTE-SE A NÓS!"
+      />
     </form>
   );
 };

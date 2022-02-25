@@ -4,19 +4,32 @@ import SearchIcon from "../../assets/svg/SearchIcon";
 type Props = {
   className?: string;
   placeholder?: string;
+  disabled: boolean;
+  searchFunction: (e: React.ChangeEvent<HTMLInputElement>) => void;
 };
 
-const SearchInput = ({ className, placeholder }: Props) => {
+const SearchInput = ({
+  className,
+  placeholder,
+  disabled,
+  searchFunction,
+}: Props) => {
   const [clicked, setClicked] = useState(false);
 
   return (
     <div
       className={`border ${clicked ? "border-black" : "border-grey"} ${
         className || ""
+      } ${
+        disabled ? "cursor-not-allowed bg-gray-200 border-none" : ""
       } flex items-center justify-between bg-white px-4 py-3 rounded-[10px] mt-8 mb-10`}
     >
       <input
-        className="w-3/4 outline-none"
+        className={`${
+          disabled ? "bg-gray-200 border-none text-grey cursor-not-allowed" : ""
+        } w-3/4 outline-none`}
+        onChange={searchFunction}
+        disabled={disabled}
         onFocus={() => setClicked(true)}
         onBlur={() => setClicked(false)}
         type="text"
