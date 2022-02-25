@@ -1,46 +1,49 @@
-# Getting Started with Create React App
+# Teste Garantti - Cadastro de Usuários - **Front End**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Foi solicitada a criação de um pequeno sistema que respeitasse as solicitações:
+- Listagem
+- Cadastro
+- Visualização
 
-## Available Scripts
+### Observações:
 
-In the project directory, you can run:
+1. Desde já, agradeço e espero conseguir atender minimamente o que os senhores esperavam! <br/>
+2. Tomei a liberdade de utilizar alguns estilos, cores e fontes do site oficial da Garantti. <br/>
+3. Em caso de quaisquer dúvidas, estou à disposição para respondê-las. <br/>
 
-### `yarn start`
+## Layout 🎨
+Para desenhar as telas, utilizei o Figma. Fiz algo simples, até por conta do tempo e objetivo final da aplicação. <br/> [Clique aqui para acessar o projeto diretamente no site oficial do Figma](https://www.figma.com/file/pVItIZoX1L22LxudOciAof/garantti?node-id=0%3A1).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Telas
+<div>
+  <img src="https://user-images.githubusercontent.com/86886134/155739915-8abd5037-e20e-4b07-bcef-05260fa719ca.png"  width="590" height="700" />
+<img src="https://user-images.githubusercontent.com/86886134/155739507-c5fff2ca-2179-44bc-a90e-c9f2d8eb9884.png"  width="170" height="700" />
+  </div>
+  
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Execução do código :gear:
 
-### `yarn test`
+Para utilizar o código, basta:
+1. Clone este repositório.
+2. Execute `` yarn install `` para instalar as dependências necessárias.
+3. Execute `` yarn test `` para executar os testes escritos.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Link de deploy da aplicação, para acesso rápido ao resultado final: https://garantti-test-frontend.herokuapp.com/
 
-### `yarn build`
+## Principais packages e frameworks utilizados:
+-  **Tailwindcss**: Para aplicação rápida e produtiva de estilos ([docs oficiais Tailwindcss](https://tailwindcss.com/))
+-  **Axios**: Para auxiliar nas requisições ([docs oficiais Axios](https://axios-http.com/docs/intro))
+-  **React Router e React Router Hash Link**: Essas duas em conjunto para fazer o efeito de scroll automático da página <br/> ([docs oficiais React Router](https://v5.reactrouter.com/web/guides/quick-start)) <br/> ([docs de React Router Hash Link no site NPM](https://www.npmjs.com/package/react-router-hash-link))
+-  **Validator**: Para validação de alguns campos, como Email. ([docs do Validator no NPM](https://www.npmjs.com/package/validator))
+-  **Jest e React-Testing-Library**: Para auxiliar na criação de testes unitários. <br/> ([docs Jest](https://jestjs.io/pt-BR/docs/getting-started)) <br/> ([docs React-Testing-Library](https://testing-library.com/docs/))
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+##
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Como utilizar a aplicação 
+A utilização é bem simples, visto que o objetivo era simplesmente criar, listar e encontrar usuários, com suas respectivas informações.
+- Na seção com título "Junte-se a nós", você encontrará três inputs, os quais têm como objetivo a criação do usuário. <br/> **Certifique-se de estar provendo os valores corretos (nome, email e cargo)**
+- Na seção com título "Veja nossa lista de usuários!", você encontrará a listagem de todos os usuários, juntamente com um campo de pesquisa via email, para encontrar um usuário em específico.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Considerações finais
+Mais uma vez agradeço pela oportunidade e espero conseguir atender ao solicitado. Me desculpe qualquer coisa. :) <br/>
+**Para acessar o repositório do Back-End da aplicação, [clique aqui](https://github.com/DiasBriel/garantti-teste-backend)**.
