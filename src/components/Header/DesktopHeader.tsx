@@ -1,3 +1,4 @@
+import { HashLink } from "react-router-hash-link";
 import Button from "../Button";
 import Logo from "./Logo";
 
@@ -12,10 +13,16 @@ const DesktopHeader = ({ className }: Props) => {
     >
       <Logo />
       <div className="md:space-x-8 lg:space-x-16">
-        <span className="underline text-white text-sm">
+        <HashLink
+          smooth
+          to="#usuarios"
+          className="underline text-white text-sm"
+        >
           USUÁRIOS EXISTENTES
-        </span>
-        <Button buttonStyle="secondary" label="NOVO USUÁRIO" />
+        </HashLink>
+        <HashLink smooth to="#junte-se">
+          <Button buttonStyle="secondary" label="NOVO USUÁRIO" />
+        </HashLink>
       </div>
     </div>
   );

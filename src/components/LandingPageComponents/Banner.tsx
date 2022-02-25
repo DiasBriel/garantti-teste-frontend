@@ -1,3 +1,4 @@
+import { HashLink } from "react-router-hash-link";
 import MainImage from "../../assets/svg/MainImage";
 import Button from "../Button";
 
@@ -11,8 +12,12 @@ const Banner = () => {
           <br /> todos os nossos usuários.
         </h4>
         <div className="space-y-3 sm:space-y-0 sm:space-x-5 flex flex-col sm:flex-row justify-center md:justify-start">
-          <Button buttonStyle="primary" label="JUNTE-SE A NÓS!" />
-          <Button buttonStyle="secondary" label="NOSSOS USUÁRIOS" />
+          <HashLink smooth to="#junte-se">
+            <Button buttonStyle="primary" label="JUNTE-SE A NÓS!" />{" "}
+          </HashLink>
+          <HashLink smooth to="#usuarios">
+            <Button buttonStyle="secondary" label="NOSSOS USUÁRIOS" />
+          </HashLink>
         </div>
       </div>
 

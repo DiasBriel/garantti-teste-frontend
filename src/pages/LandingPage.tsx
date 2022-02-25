@@ -11,9 +11,14 @@ const LandingPage = () => {
         <Banner />
       </Container>
       <div className="bg-lightGrey py-4 lg:py-10">
-        <JoinUs />
+        <div id="junte-se">
+          <JoinUs />
+        </div>
+
         <Divider />
-        <Users />
+        <div id="usuarios">
+          <Users />
+        </div>
       </div>
     </div>
   );
