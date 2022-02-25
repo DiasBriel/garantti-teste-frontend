@@ -26,7 +26,8 @@ Para desenhar as telas, utilizei o Figma. Fiz algo simples, até por conta do te
 Para utilizar o código, basta:
 1. Clone este repositório.
 2. Execute `` yarn install `` para instalar as dependências necessárias.
-3. Execute `` yarn test `` para executar os testes escritos.
+3. Execute `` yarn start `` para iniciar a aplicação localmente.
+4. Execute `` yarn test `` para executar os testes escritos.
 
 Link de deploy da aplicação, para acesso rápido ao resultado final: https://garantti-test-frontend.herokuapp.com/
 
