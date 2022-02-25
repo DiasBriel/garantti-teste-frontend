@@ -12,7 +12,7 @@ const ScrollableList = ({ children }: Props) => {
       <GradientEffect />
       <div
         className="flex md:flex-wrap md:justify-center
-       whitespace-nowrap gap-5 px-8 overflow-x-scroll scrollbar-hide"
+       whitespace-nowrap gap-5 px-8 py-4 overflow-x-scroll scrollbar-hide"
       >
         {children}
       </div>

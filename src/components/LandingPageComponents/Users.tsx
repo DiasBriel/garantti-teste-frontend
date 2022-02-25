@@ -18,8 +18,9 @@ const Users = () => {
       <ScrollableList>
         <Card colorful className="space-y-5">
           <ProfileIcon />
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center space-y-1">
             <span className="text-base font-semibold">Gabriel Dias</span>
+            <span className="text-sm font-semibold">gabriel@email.com</span>
             <span className="text-sm text-white font-bold">Manager</span>
           </div>
         </Card>
