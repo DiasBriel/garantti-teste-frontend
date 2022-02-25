@@ -37,7 +37,11 @@ Link de deploy da aplicação, para acesso rápido ao resultado final: https://g
 -  **Validator**: Para validação de alguns campos, como Email. ([docs do Validator no NPM](https://www.npmjs.com/package/validator))
 -  **Jest e React-Testing-Library**: Para auxiliar na criação de testes unitários. <br/> ([docs Jest](https://jestjs.io/pt-BR/docs/getting-started)) <br/> ([docs React-Testing-Library](https://testing-library.com/docs/))
 
-##
+## Git
+ Sempre em meus projetos utilizo algo próximo ao gitflow. Neste projeto não foi diferente:
+ - **main**: Branch principal
+ - **develop**: Branch para deploy e recepção de novas features, bugfix e afins
+ - **feature/NomeDaBranch**: Branch para adicionar novas features à aplicação 
 
 ## Como utilizar a aplicação 
 A utilização é bem simples, visto que o objetivo era simplesmente criar, listar e encontrar usuários, com suas respectivas informações.
