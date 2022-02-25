@@ -2,9 +2,11 @@ type Props = {
   buttonStyle: string;
   className?: string;
   label: string;
+  disabled?: boolean;
+  type?: "submit" | "reset" | "button" | undefined;
 };
 
-const Button = ({ buttonStyle, className, label }: Props) => {
+const Button = ({ buttonStyle, className, label, disabled, type }: Props) => {
   let customStyle: string = "";
 
   if (buttonStyle === "primary") {
@@ -19,7 +21,10 @@ const Button = ({ buttonStyle, className, label }: Props) => {
 
   return (
     <button
-      className={`${className} ${customStyle} py-3 px-4 rounded-full transition duration-200 whitespace-nowrap`}
+      type={type}
+      className={`${className} ${customStyle} ${
+        disabled ? "shadow-none opacity-50 cursor-not-allowed" : ""
+      } py-3 px-4 rounded-full transition duration-200 whitespace-nowrap`}
     >
       {label}
     </button>
