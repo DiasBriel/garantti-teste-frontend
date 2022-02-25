@@ -1,8 +1,8 @@
 const Footer = () => {
   return (
-    <div className="bg-primary text-center text-white py-16">
+    <footer className="bg-primary text-center text-white py-16">
       Design feito por Gabriel Dias
-    </div>
+    </footer>
   );
 };
 
