@@ -44,6 +44,7 @@ const Users = () => {
           .get(`/user/${e.target.value}`)
           .then((res) => {
             setUsers([res.data.data]);
+            setErrorMessage("");
             setLoading(false);
           })
           .catch((err) => {
