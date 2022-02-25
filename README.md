@@ -41,7 +41,7 @@ Link de deploy da aplicação, para acesso rápido ao resultado final: https://g
  Sempre em meus projetos utilizo algo próximo ao gitflow. Neste projeto não foi diferente:
  - **main**: Branch principal
  - **develop**: Branch para deploy e recepção de novas features, bugfix e afins
- - **feature/<nome da branch>**: Branch para adicionar novas features à aplicação 
+ - **feature/NomeDaBranch**: Branch para adicionar novas features à aplicação 
 
 ## Como utilizar a aplicação 
 A utilização é bem simples, visto que o objetivo era simplesmente criar, listar e encontrar usuários, com suas respectivas informações.
